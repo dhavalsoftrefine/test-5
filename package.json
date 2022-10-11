@@ -1,0 +1,23 @@
+{
+  "name": "test-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/styles.css -w",
+    "devserver" : "live-server",
+    "start" : "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.3"
+  },
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0"
+  }
+}

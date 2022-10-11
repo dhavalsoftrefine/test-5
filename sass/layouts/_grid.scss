@@ -1,0 +1,26 @@
+.grid{
+    display: grid;
+
+    &__container{
+        grid-template-columns: 5% 20% 45% 30%;
+
+        @include respond(tab-port){   //900px
+            grid-template-columns: 8% 22% 35% 35%;
+        }
+
+        @include respond(large-phone){   //600px
+            grid-template-rows: 0.9fr 1.4fr;
+        }
+    }
+}
+
+.grid__recent__card{
+    // grid-template-columns: (auto-fit, minmax(20rem, 1fr));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @include respond(phone){   //450px
+        grid-template-columns: 1fr;
+    }
+}

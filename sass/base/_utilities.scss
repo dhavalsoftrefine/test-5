@@ -1,0 +1,39 @@
+.bold{
+    font-weight: 600;
+}
+
+.orange{
+    background-color: $color-light-orange;
+    border : 3px solid $color-light-orange;
+}
+
+.yellow{
+    background-color: $color-yellow;
+    border : 3px solid $color-yellow;
+
+}
+
+.dark-orange{
+    background-color: #f0884e;
+}
+
+.green{
+    background-color: darkcyan;
+}
+
+.white{
+    background-color: #fff;
+}
+
+.primary-border{
+    border: 2px solid rgba($color-primary-dark, 0.4);
+}
+
+.primary-light{
+    background-color: rgba($color-primary,0.5);
+}
+
+.black{
+    background-color: #000;
+    color: #fff;
+}

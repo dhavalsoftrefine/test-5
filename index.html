@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Document</title>
+</head>
+<body class="container grid grid__container">
+    
+    <div class="wrapper__nav--small">
+        <input class ="small-nav__checkbox" type="checkbox" id="small-nav__checkbox" />                 
+        <section class="small-nav">
+            <div class="logo__container">
+                <img src="./images/logo.png" alt="logo" class="logo" />
+                <label for="small-nav__checkbox">
+                    <svg class="small-nav__icon three-bars" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                    </svg>
+                </label>
+            </div>
+            <!-- <label for="small-nav__checkbox">
+                <svg class="small-nav__three-bars" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                </svg>
+            </label>
+            <input class ="small-nav__checkbox" type="checkbox" id="small-nav__checkbox" /> -->
+
+            <ul class="small-nav__icon__container">
+                <li class="small-nav__item active">
+                    <a class="small-nav__link">
+                        <label for="big-nav__checkbox">
+                            <svg  class="small-nav__icon active" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg> 
+                        </label>
+                    </a>
+                </li>
+
+                <li class="small-nav__item">
+                    <a class="small-nav__link">
+                        <svg class="small-nav__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                        </svg>                                            
+                    </a>
+                </li>
+
+                <li class="small-nav__item">
+                    <a class="small-nav__link">
+                        <svg class="small-nav__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                        </svg>                                          
+                    </a>
+                </li>
+
+                <li class="small-nav__item">
+                    <a class="small-nav__link">
+                        <svg class="small-nav__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>                                          
+                    </a>
+                </li>
+
+                <li class="small-nav__item">
+                    <a class="small-nav__link">
+                        <svg class="small-nav__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+
+                    </a>
+                </li>
+
+                <li class="small-nav__item">
+                    <a class="small-nav__link">
+                        <svg class="small-nav__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+                        </svg>                        
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" class="question__icon" >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                </svg>
+            </a>                              
+        </section>
+    </div>
+
+    <input class ="big-nav__checkbox" type="checkbox" id="big-nav__checkbox" />                 
+    <div class="wrapper__nav--big">
+        <section class="big-nav">
+           <div class="big-nav__head">
+                <h3 class="heading-3">
+                    Ziferblat
+                </h3>
+                <p class="sub-head ">Teamwork & time management</p>
+           </div>
+
+           <div class="big-nav__content">
+                <div class="big-nav__section">
+                     <div class="big-nav__section__name">Team</div>
+                     <svg class="arrow__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                     </svg>    
+                </div>
+            
+                <div class="big-nav__section-container">
+                    <div class="big-nav__section">
+                         <div class="big-nav__section__name">Projects</div>
+                         <svg class="arrow__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                         </svg>   
+                    </div>
+                    <div class="big-nav__sub-section__container"> 
+                        <p class="big-nav__sub-section">All projects(4)</p>
+                        <p class="big-nav__sub-section">Design system</p>
+                        <p class="big-nav__sub-section">Make unique design for customer</p>
+                        <p class="big-nav__sub-section">User Flow</p>
+                        <p class="big-nav__sub-section">UX research</p>
+                        <p class="big-nav__sub-section bold">Add new project</p>
+                    </div>
+                </div>
+
+                <div class="big-nav__section-container">
+                    <div class="big-nav__section">
+                        <div class="big-nav__section__name">Tasks</div>
+                        <svg class="arrow__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>   
+                    </div>
+                    <div class="big-nav__sub-section__container"> 
+                       <p class="big-nav__sub-section">All tasks(3)</p>
+                       <p class="big-nav__sub-section">New(1)</p>
+                       <p class="big-nav__sub-section">In progress(1)</p>
+                       <p class="big-nav__sub-section">Done(1)</p>
+                       <p class="big-nav__sub-section bold">Add new task</p>
+                    </div>
+                </div>
+            
+                 <div class="big-nav__section">
+                     <div class="big-nav__section__name">Reminders</div>
+                     <svg class="arrow__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                     </svg>    
+                </div>
+            
+                <div class="big-nav__section">
+                    <div class="big-nav__section__name">Messenger</div>
+                    <svg class="arrow__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>   
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section class="main">
+        <label for="small-nav__checkbox">
+            <svg class="nav__button" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg>
+        </label>
+        
+        <h3 class="date heading-3">Today,4 October</h3>
+        <div class="search__container">
+            <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+            <input type="search__input" class="search" placeholder="Searching for..." />
+        </div>
+
+        <div class="recent__container">
+            <div class="recent__head">
+                <h3 class="head-title">Recent projects</h3>
+                <p class="recent__head-viewall">View all</p>
+            </div>
+
+            <div class="recent__card__container grid grid__recent__card">
+                <div class="recent__card orange">
+                    <div class="recent__card-top">
+                        <div class="recent__card-top--1">
+                            <div class="recent__image__container">
+                                <p class="recent__image recent__image--1 black orange">+3</p>
+                                <img class="recent__image recent__image--2 orange" src="./images/person-1.jpg" alt="">
+                                <img class="recent__image recent__image--3 orange" src="./images/person-2.jpg" alt="">
+                            </div>
+                
+                            <svg class="more__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                            </svg>
+                        </div>
+                    
+                        <div class="recent__card-top--2">
+                            <h3 class="recent__name">Design system</h3>
+                            <p class="recent__deadline">Deadline: 18 October</p>
+                        </div>
+                    </div>
+                   
+                    <div class="recent__card-end">
+                        <div class="recent__progress">
+                            <P class="recent__progress--text">84 hours / 40%</P>
+                            <div class="recent__progress--width orange"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recent__card yellow">
+                    <div class="recent__card-top">
+                        <div class="recent__card-top--1">
+                            <div class="recent__image__container">
+                                <p class="recent__image recent__image--1 yellow">+2</p>
+                                <img class="recent__image recent__image--2 yellow" src="./images/person-3.jpg" alt="">
+                                <img class="recent__image recent__image--3 yellow" src="./images/person-4.jpg" alt="">
+                            </div>
+
+                            <svg class="more__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                            </svg> 
+                        </div>
+                     
+                        <div class="recent__card-top--2">
+                            <h3 class="recent__name">Make unique page for customer</h3>
+                            <p class="recent__deadline">Deadline: 30 October</p>
+                        </div>
+                    </div>
+
+                    <div class="recent__card-end">
+                        <div class="recent__progress">
+                            <P class="recent__progress--text">108 hours / 75%</P>
+                            <div class="recent__progress--width yellow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reminder__container">
+            <div class="reminder__head">
+                <h3 class="head-title">Reminders</h3>
+            </div>
+            <div class="reminder__content">
+                <div class="reminder__card">
+                    <div class="reminder__main">
+                        <div class="reminder__date">
+                            Tomorrow, 16:00 / 18:00
+                        </div>
+                        <h3 class="reminder__title head-title">
+                            Discussion of the interm results of the project
+                        </h3>
+                    </div>
+
+                    <div class="reminder__button__container">
+                        <button class="reminder__button">Set reminder</button>
+                    </div>
+
+                    <div class="reminder__dots">
+                        <div class="reminder__dot reminder__dot--1"></div>
+                        <div class="reminder__dot reminder__dot--2"></div>
+                        <div class="reminder__dot reminder__dot--3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile">
+        <div class="profile__dots">
+            <div class="profile__dot"></div>
+            <div class="profile__dot"></div>
+            <div class="profile__dot"></div>
+        </div>  
+
+        <div class="profile-top">
+            <button class="profile__add-button">Add project</button>
+            <div class="profile__main">
+                <div class="bell__icon-container">
+                    <svg class="bell__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                    </svg>
+                    <div class="noti-dot"></div>
+                </div>
+                
+                <img class="profile__photo" src="./images/profile.jpg" />
+                <p class="profile__user">User</p>
+                <h4 class="profile__user-name">Mario</h4>
+                <svg class="profile__aero" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>  
+        </div>
+
+        <div class="members">
+            <h3 class="members__head head-title">Team members</h3>
+            <div class="members__container">
+                <img class="members__image" src="./images/person-5.jpg" />
+                <img class="members__image" src="./images/person-6.jpg" />
+                <div class="members__image members__no-image">JR</div>
+                <img class="members__image" src="./images/person-9.jpg" />
+                <img class="members__image" src="./images/person-10.jpg" />
+                <svg class="members__add" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>  
+            </div>
+        </div>
+
+        <div class="projects__details__card">
+            <div class="project__details">
+                <div class="project__details-title">Project time</div>
+                <div class="project__details-count head-title">18 hours</div>
+            </div>
+            <div class="project__details">
+                <div class="project__details-title">Task in progress</div>
+                <div class="project__details-count head-title">2</div>
+            </div>
+            <div class="project__details">
+                <div class="project__details-title">Finished tasks</div>
+                <div class="project__details-count head-title">16</div>
+            </div>
+        </div>
+
+        <div class="tasks__container">
+            <div class="tasks__head">
+                <h3 class="head-title">Daily tasks(3)</h3>
+                <p class="tasks__edit">Edit</p>
+            </div>
+
+            <div class="tasks__main" >
+                <div class="tasks__card__container">
+                    <div class="tasks__card primary-light">
+                        <div class="tasks__card--top">
+                                    
+                        </div>
+                        <div class="tasks__card__text">Add new</div>
+                        <svg class="tasks__card__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>
+                    </div>
+                    
+                    <div class="tasks__card white">
+                        <div class="tasks__card--top">
+                            <div class="tasks__dot dark-orange"></div>
+                            <p class="tasks__card__status">New</p>
+                            <div class="tasks__status__box primary-border"></div>
+                        </div>
+                        <div class="tasks__card__text">Change color palette to more bright</div>
+                    </div>  
+
+                    <div class="tasks__card white">
+                        <div class="tasks__card--top">
+                            <div class="tasks__dot green"></div>
+                            <p class="tasks__card__status">In progress</p>
+                            <div class="tasks__status__box primary-border"></div>
+                        </div>
+                        <div class="tasks__card__text">Make prototype  for mobile version</div>
+                    </div>  
+
+                    <div class="tasks__card dark-orange">
+                        <div class="tasks__card--top">
+                            <div class="tasks__dot white"></div>
+                            <p class="tasks__card__status">Done</p>
+                            <div class="tasks__status__box black">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>                                  
+                            </div>
+                        </div>
+                        <div class="tasks__card__text">Make fixes in homepage</div>
+                    </div>  
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
+

@@ -1,0 +1,24 @@
+.heading-3{
+    font-weight: 700; 
+    font-size: 2.5rem; 
+    color: black !important;
+
+    @include respond(large-phone){   //450px
+        font-size: 3.2rem;
+    }
+}
+
+.sub-head{
+    font-weight: 500; 
+    font-size: 1.2rem;
+    margin-top: -0.5rem;
+}
+
+.head-title{
+    font-size: 2rem;
+    color: black;
+
+    @include respond(large-phone){   //600px
+        font-size: 3rem;
+    }
+}
