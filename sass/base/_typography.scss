@@ -3,8 +3,8 @@
     font-size: 2.5rem; 
     color: black !important;
 
-    @include respond(large-phone){   //450px
-        font-size: 3.2rem;
+    @include respond(large-phone){   //500px
+        font-size: 2.5rem;
     }
 }
 
@@ -19,6 +19,10 @@
     color: black;
 
     @include respond(large-phone){   //600px
-        font-size: 3rem;
+        font-size: 3rem;    
+    }
+
+    @include respond(large-phone){   //500px
+        font-size: 2.5rem;
     }
 }

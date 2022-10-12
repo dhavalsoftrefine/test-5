@@ -40,8 +40,13 @@
     height: 3rem;
     width: 3rem;
 
+    @include respond(tab-land){   //1200px
+        margin-left: -3rem;
+    }
+ 
     @include respond(large-phone){   //600px
         height: 4rem;
         width: 4rem;
+        margin-left: 0;
     }
 }
